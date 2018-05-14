@@ -1,6 +1,6 @@
 [package]
 name = "ethcore-bytes"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Parity Technologies <admin@parity.io>"]
 description = "Byte utilities for Parity"
 homepage = "https://github.com/paritytech/ethcore-bytes"

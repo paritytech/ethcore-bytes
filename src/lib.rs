@@ -149,6 +149,22 @@ mod tests {
 	}
 
 	#[test]
+	fn test_handles_illegal_offsets() {
+		// given
+		let mut data = vec![0, 0, 0];
+		let res = {
+			let mut bytes = BytesRef::Fixed(&mut data[..]);
+
+			// when illegal offset is provided
+			bytes.write(4, &[1])
+		};
+
+		// then no changes are made
+		assert_eq!(&data, &[0, 0, 0]);
+		assert_eq!(res, 0);
+	}
+
+	#[test]
 	fn should_write_bytes_to_flexible_bytesref() {
 		// given
 		let mut data1 = vec![0, 0, 0];
