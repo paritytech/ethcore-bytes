@@ -2,7 +2,10 @@
 name = "ethcore-bytes"
 version = "0.1.0"
 authors = ["Parity Technologies <admin@parity.io>"]
-description = "byte utilities for Parity"
+description = "Byte utilities for Parity"
+homepage = "https://github.com/paritytech/ethcore-bytes"
+repository = "https://github.com/paritytech/ethcore-bytes"
+readme = "README.md"
 license = "GPL-3.0"
 
 [dependencies]
